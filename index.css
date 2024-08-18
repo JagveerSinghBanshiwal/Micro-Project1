@@ -98,3 +98,6 @@ footer {
 .div1 p, .div2 p {
     margin: 5px 0; /* Small margin between paragraphs */
 }
+#last{
+    margin-top: 30px;
+}
