@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+main {
+    background-color: #ffcd9e;
+    padding: 20px;
+    flex: 7; /* Takes up 70% of the height */
+    display: flex;
+    flex-direction: row; /* Align child divs in a row */
+}
+.block {
+    flex: 1; /* Each block takes up 50% of the width */
+   
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
+.block1 {
+    background-color: #ffcd9e; /* Light grey background for the first block */
+    
+    
+}
+.block2 {
+    background-color: #ffcd9e; /* Darker grey background for the second block */
+    position: relative; /* For absolute positioning of the image */
+    padding: 20px; /* Padding inside the block to create space around the image */
+    box-sizing: border-box; /* Include padding in the size calculation */
+    overflow: hidden; /* Hide overflow if the image exceeds the block boundaries */
+}
+.block2 img {
+    position: absolute; /* Position the image absolutely within the block */
+    top: 50%; /* Vertically center the image */
+    right: 0; /* Align the image to the right side */
+    transform: translateY(-50%); /* Center the image vertically */
+    width: auto; /* Maintain aspect ratio for width */
+    height: calc(100% - 40px); /* Full height minus the padding */
+    object-fit: contain; /* Ensure the image fits within the block without distortion */
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    flex: 3; /* Takes up 30% of the height */
+}
+input{
+    height :30px;
+    width:300px;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 5px;
+}
+button{
+    height:35px;
+    width:130px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    border-color: black;
+    margin:10px;
+}
+.email{
+    margin-left:30px;
+}
+.first{
+    margin:30px;
+}
+.para{
+    margin:30px;
+    padding-left:30px;
+}
+span{
+    color:white;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between the two divs */
+}
+.div1 {
+    text-align: left; /* Align all paragraphs in div1 to the left */
+    padding-left:100px;
+}
+
+.div2 {
+    text-align: right; /* Align all paragraphs in div2 to the right */
+    padding-right:100px;
+}
+
+.div1, .div2 {
+    flex: 1; /* Both divs take up equal space */
+}
+
+.div1 p, .div2 p {
+    margin: 5px 0; /* Small margin between paragraphs */
+}
